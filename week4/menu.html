@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Menu</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+        body {
+            font-family: "Oxygen", Helvetica, sans-serif;
+        }
+
         div.heading {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
+            padding: 25px;
         }
 
         div.menu_bar {
@@ -47,7 +53,7 @@
             display: none;
         }
 
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 840px) {
             div.menu_bar {
                 display: none;
 
@@ -62,7 +68,15 @@
             }
         }
 
-        @media screen and (max-width: 650px; )
+        @media screen and (max-width: 650px) {
+            img.phonelogo {
+                display: none;
+            }
+
+            h2 {
+                display: none;
+            }
+
         }
     </style>
 </head>
@@ -80,7 +94,7 @@
         <div class="contact"><img class="phonelogo" src="images/phone icon.png" alt="phonelogo" width="20px">
             <h2>555-123-4567</h2>
             <button>Contact</button>
-            <img class="menu" src="images/menu icon.jpg" alt="menulogo" width=20px>
+            <img class="menu" src="images/menu icon.png" alt="menulogo" width="30px">
         </div>
     </div>
 </body>
