@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        div.menu_bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        div.contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(238, 96, 14);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        h2 {
+            font-size: medium;
+        }
+
+        div.Ser {
+            color: rgb(238, 96, 14);
+        }
+
+        img.menu {
+            display: none;
+        }
+
+        @media screen and (max-width: 770px) {
+            div.menu_bar {
+                display: none;
+
+            }
+
+            img.menu {
+                display: block;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 650px; )
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="logo"><img src="images/logo ele.png" alt="logo" width="150px"></div>
+        <div class="menu_bar">
+            <div>Home</div>
+            <div class="Ser">Servies</div>
+            <div>Work</div>
+            <div>Project Details</div>
+            <div>Contact</div>
+        </div>
+        <div class="contact"><img class="phonelogo" src="images/phone icon.png" alt="phonelogo" width="20px">
+            <h2>555-123-4567</h2>
+            <button>Contact</button>
+            <img class="menu" src="images/menu icon.jpg" alt="menulogo" width=20px>
+        </div>
+    </div>
+</body>
+
+</html>
