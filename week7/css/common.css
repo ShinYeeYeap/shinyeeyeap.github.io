@@ -11,6 +11,12 @@ div.head {
 body {
     font-family: "Space Grotesk", sans-serif;
     padding: 30px 40px 30px 40px;
+    font-size: 10px;
+}
+
+#container {
+    max-width: 1280px;
+    margin: auto;
 }
 
 button.Request {
@@ -31,4 +37,216 @@ div.menubar {
     display: flex;
     align-items: center;
     gap: 50px;
+    font-size: 15px;
 }
+
+img.hamburgerbar {
+    display: none;
+}
+
+p {
+    font-size: 15px;
+
+}
+
+div.bottomborder {
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    display: flex;
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px 20px 20px 20px;
+}
+
+div.bottombg {
+    background-color: rgb(20, 25, 30, 1);
+    padding: 35px 35px 25px 25px;
+}
+
+div.bottomcontentbg {
+    padding: 0px 35px;
+    background-color: rgb(25, 25, 30, 1);
+}
+
+div.bottomlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+div.bottom_menu {
+    align-items: center;
+    display: flex;
+    gap: 35px;
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+div.social_icon {
+    display: flex;
+    gap: 15px;
+}
+
+h1.white {
+    color: white;
+}
+
+div.bottominfo {
+    align-items: center;
+    display: flex;
+    padding: 15px 35px 35px 35px;
+    justify-content: space-between;
+}
+
+div.buttonbox {
+    background-color: rgb(40, 40, 45);
+    align-items: center;
+    display: flex;
+    padding: 50px 35px;
+    gap: 10px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+div.contactus {
+    background-color: rgb(180, 250, 100);
+    color: rgb(20, 23, 30, 1);
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+}
+
+div.contactdetail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    width: 25%;
+}
+
+div.email {
+    color: white;
+    padding: 15px 25px 15px 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 55%;
+    font-size: small;
+}
+
+div.subscribe {
+    color: black;
+    background-color: rgb(179, 249, 100);
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 30px;
+    width: 35%;
+    font-size: small;
+}
+
+div.allright {
+    color: white;
+    display: flex;
+    padding: 20px 0px;
+    border-top: 1px solid white;
+}
+
+div.privacy {
+    text-decoration: underline;
+}
+
+div.social_iconbtn {
+    display: none;
+}
+
+div.bottomcontentbg {
+    background-color: rgb(20, 23, 30, 1);
+    padding: 0px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1183px) {
+    img.hamburgerbar {
+        display: block;
+    }
+
+    div.menubar {
+        display: none;
+
+    }
+
+    div.bottomborder {
+        flex-direction: column;
+    }
+
+    div.bottominfo {
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px
+    }
+
+    div.buttonbox {
+        width: 100%
+    }
+
+    div.email {
+        width: 100%;
+        text-align: left;
+    }
+
+    div.subscribe {
+        width: 100%;
+    }
+
+    div.contactetail {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    div.head {
+        padding: 0px 15px;
+    }
+
+    body {
+        padding: 0px;
+    }
+
+    div.buttonbox {
+        flex-wrap: wrap;
+    }
+
+    div.social_icon {
+        display: none;
+    }
+
+    div.bottomborder {
+        border-radius: 0px;
+    }
+
+    div.bottom_menu {
+        flex-direction: column;
+    }
+
+    div.social_iconbtn {
+        gap: 15px;
+        display: block;
+        display: flex;
+
+    }
+
+
+    div.allright {
+        gap: 15px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 800px) {}
