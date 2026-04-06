@@ -196,7 +196,7 @@ div.workerinfo {
     padding-top: 20px;
 }
 
-div.teambutton {
+div.teambotton {
     justify-content: flex-end;
     display: flex;
 }
@@ -208,6 +208,7 @@ button.team {
     padding: 20px 40px;
     justify-content: right;
     display: flex;
+    margin: 20px 0px;
 }
 
 @media screen and (max-width: 905px) {

@@ -9,8 +9,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-        body {
+        * {
             margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
             background-color: rgb(255, 248, 240);
             color: rgb(75, 46, 43);
             background-image: url(images/background3.jpeg);
@@ -18,9 +23,9 @@
         }
 
         div.header {
-            display: flex;
             align-items: center;
             justify-content: space-between;
+            display: flex;
             background-color: rgb(140, 90, 60);
             padding: 10px 20px 10px 20px;
         }
@@ -39,6 +44,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 10px;
 
         }
 
@@ -47,35 +53,32 @@
             padding: 30px;
         }
 
+        p {
+            text-align: center;
+        }
+
+
         div.exercise {
             display: flex;
-            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 15px;
 
         }
 
         div.exercisebox {
             display: flex;
-            margin: 15px;
-            background-color: rgba(192, 133, 82);
+            background-color: rgba(192, 133, 82, 0.536);
             padding: 15px;
+            gap: 15px;
             align-items: center;
             flex-direction: column;
             border-radius: 20px;
-            width: 30%;
+            width: calc(33.33% - 15px);
+
 
         }
 
-        div.exercisebox2 {
-            display: flex;
-            margin: 15px;
-            background-color: rgba(192, 133, 82);
-            padding: 15px;
-            align-items: center;
-            flex-direction: column;
-            border-radius: 20px;
-            width: 100%;
-
-        }
 
         div.exeborder {
             display: flex;
@@ -89,6 +92,12 @@
 
         img.calander {
             max-width: 30px;
+        }
+
+        div.exelink {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         a {
@@ -126,7 +135,11 @@
             }
 
             div.exercisebox {
-                width: 80%;
+                width: calc(50% - 10px)
+            }
+
+            div.exercisebox {
+                width: calc(100% - 20px);
             }
 
             div.exercisebox2 {
@@ -155,7 +168,7 @@
 
     <div class="profile">
         <div class="profilepic">
-            <img class="propic" src="images/profilepic.jpg" alt="Profile Pic" width="200px">
+            <img class="propic" src="images/profile pic.jpg" alt="Profile Pic" width="220px">
             <h2>Yeap Shin Yee</h2>
             <h3>Web Publishing</h3>
             <p>Hello! Im Yeap Shin Yee, an art student. Welcome to my personal portfolio.</p>
@@ -171,10 +184,10 @@
             </div>
             <div class="exelink">
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week1/exe1.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week1/exe1.html" target="_blank">Exercise 1</a></p>
                 </div>
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week1/exe2.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week1/exe2.html" target="_blank">Exercise 2</a></p>
                 </div>
             </div>
         </div>
@@ -185,13 +198,13 @@
             </div>
             <div class="exelink">
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week2/button.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week2/button.html" target="_blank">Exercise 1</a></p>
                 </div>
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week2/self-intro.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week2/self-intro.html" target="_blank">Exercise 2</a></p>
                 </div>
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week2/artist.html" target="_blank">Exercise 3</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week2/artist.html" target="_blank">Exercise 3</a></p>
                 </div>
             </div>
         </div>
@@ -202,30 +215,46 @@
             </div>
             <div class="exelink">
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week3/flexbox1.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week3/flexbox1.html" target="_blank">Exercise 1</a></p>
                 </div>
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week3/flexbox2.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week3/flexbox2.html" target="_blank">Exercise 2</a></p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="exercise">
-        <div class="exercisebox2">
+        <div class="exercisebox">
             <div class="exeborder">
                 <img class="calander" src="images/calendericon.png" alt="Calander" width="100%">
                 <div>Week 4</div>
             </div>
             <div class="exelink">
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week4/menu.html" target="_blank">Exercise 1</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week4/menu.html" target="_blank">Exercise 1</a></p>
                 </div>
                 <div>
-                    <p><a href="http://127.0.0.1:5500/week4/home.html" target="_blank">Exercise 2</a></p>
+                    <p><a href="https://shinyeeyeap.github.io/week4/home.html" target="_blank">Exercise 2</a></p>
+                </div>
+                <div>
+                    <p><a href="https://shinyeeyeap.github.io/week4/index.html" target="_blank">Exercise 3</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="exercisebox">
+            <div class="exeborder">
+                <img class="calander" src="images/calendericon.png" alt="Calander" width="100%">
+                <div>Week 7</div>
+            </div>
+            <div class="exelink">
+                <div>
+                    <p><a href="https://shinyeeyeap.github.io/week7/casestudy.html" target="_blank">Exercise 1</a></p>
+                </div>
+                <div>
+                    <p><a href="https://shinyeeyeap.github.io/week7/home.html" target="_blank">Exercise 2</a></p>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="footer">
         <div class="socialfoot">
