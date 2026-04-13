@@ -1,0 +1,96 @@
+•⁠ {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* === rootvariable === */
+:root {
+    --border-radius: 10px;
+    --background-color: rgb(241, 241, 241);
+    --color-description: rgb(204, 203, 203);
+    --color-heading: rgb(0, 0, 0);
+    --border-radius: 10px;
+}
+
+body {
+    margin: 10px 60px;
+}
+
+div.trip {
+    justify-content: space-around;
+    display: flex;
+    gap: 70px;
+}
+
+div.tripcard {
+    display: flex;
+    background-color: var(--background-color);
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.5);
+    width: 45%;
+}
+
+img.image {
+    border-radius: var(--border-radius);
+}
+
+div.activity {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+div.overlaybox {
+    position: absolute;
+    right: -10%;
+    display: flex;
+    padding: 10px;
+    bottom: 60px;
+    gap: 5px;
+    width: 50%;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+img.city {
+    border-radius: 60px;
+}
+
+span {
+    color: rgb(197, 94, 244);
+    font-weight: 300;
+}
+
+p.completed {
+    font-weight: 600;
+}
+
+div.citytext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.people {
+    display: flex;
+    gap: 15px;
+
+}
+
+@media screen and (max-width: 1078px) {
+    div.trip {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+div.tripcard {
+    width: 100%;
+}
