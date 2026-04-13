@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+•⁠ {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* === rootvariable === */
+:root {
+    --font-family: "Fredoka", sans-serif;
+    --background-color: rgb(199, 199, 199);
+    --color-heading: rgb(19, 19, 19);
+    --color-description: rgb(170, 170, 170);
+    --color-link: rgb(0, 218, 100);
+    --border: 1px solid none;
+    --border-radius: 10px;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+div.description {
+    justify-content: space-between;
+    display: flex;
+    margin: 35px 15px 25px;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    color: var(--color-description);
+}
+
+h1 {
+    color: var(--color-heading);
+}
+
+div.contentbox {
+    display: flex;
+    gap: 25px;
+    margin: 0px 25px;
+    flex-wrap: wrap;
+    flex-direction: center;
+}
+
+div.border {
+    width: calc(33.33% - 16.66px)
+}
+
+div.info {
+    border-bottom: 1px solid grey;
+    padding: 25px;
+    color: var(--color-heading);
+}
+
+div.relative {
+    position: relative;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    bottom: 65px;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+div.read {
+    color: var(--color-link);
+    padding: 22px;
+    text-decoration: underline;
+}
+
+div.read::after {
+    content: "→ ";
+    gap: 15px;
+}
+
+@media screen and (max-width: 1011px) {
+    div.border {
+        width: calc(50% - 12.5px)
+    }
+}
+
+@media screen and (max-width: 755px) {
+    div.border {
+        width: calc(100% - 20px)
+    }
+}
