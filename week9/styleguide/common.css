@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* === rootvariable === */
+:root {
+    --text-primary: #222222;
+    --text-secondary: #444444;
+
+    /*Desktop font size*/
+    --font-family: "Lexend";
+    --num-fontfam: "Oswald";
+    --desk-h1-size: 60px;
+    --desk-h1-lh: 62.4px;
+
+    --desk-h2-size: 42px;
+    --desk-h2-lh: 50.7px;
+
+    --desk-h3-size: 36px;
+    --desk-h3-lh: 46.8px;
+
+    --desk-h4-size: 24px;
+    --desk-h4-lh: 30.8px;
+
+    --desk-h5-size: 20px;
+    --desk-h5-lh: 28px;
+
+    --desk-h6-size: 16px;
+    --desk-h6-lh: 22.4px;
+    --line-weight: 500;
+
+    /*tablet font size*/
+    --tab-h1-size: 50px;
+    --tab-h1-lh: 65px;
+
+    --tab-h2-size: 42px;
+    --tab-h2-lh: 54.6px;
+
+    --tab-h3-size: 36px;
+    --tab-h3-lh: 46.8px;
+
+    --tab-h4-size: 24px;
+    --tab-h4-lh: 31.2px;
+
+    --tab-h5-size: 20px;
+    --tab-h5-lh: 28px;
+
+    --tab-h6-size: 16px;
+    --tab-h6-lh: 22.4px;
+
+    /*mobile font size*/
+    --mob-h1-size: 48px;
+    --mob-h1-lh: 62.4px;
+
+    --mob-h2-size: 39px;
+    --mob-h2-lh: 50.7px;
+
+    --mob-h3-size: 24px;
+    --mob-h3-lh: 46.8px;
+
+    --mob-h4-size: 22px;
+    --mob-h4-lh: 30.8px;
+
+    --mob-h5-size: 20px;
+    --mob-h5-lh: 28px;
+
+    --mob-h6-size: 16px;
+    --mob-h6-lh: 22.4px;
+
+    /*buttton*/
+    --btn-pri-bg: #FCC943;
+    --btn-pri-text: #222222;
+    --btn-pri-padding: 22px 34px 24px 34px;
+    --btn-sec-padding: 20px 30px;
+    --btn-font-size: 16px;
+    --btn-border-radius: 6px;
+    --btn-icon-size: 16px;
+    --btn-pri-color: #222222;
+    --btn-sec-color: #FFFFFF;
+    --btn-head-button: #ECF9EE;
+    --btn-head-hoverbutton: #F2F0FF;
+}
+
+
+body {
+    font-family: var(--font-family);
+    color: var(--font-color-primary);
+}
+
+div.header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 16px 80px;
+}
+
+
+div.headerbar {
+    display: flex;
+    font-size: 17px;
+    gap: 30px;
+}
+
+.headerbar:hover {
+    color: #FCC943
+}
+
+div.headbutton {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+
+button.enrol {
+    border: 0px;
+    text-decoration: none;
+    background-color: var(--btn-header-button);
+    color: var(--btn-primary-color);
+    font-size: var(--btn-font-size);
+    border-radius: var(--btn-border-radius);
+    padding: var(--btn-secondary-padding);
+}
+
+div.headbutton a::after {
+    content: url("../images/btnicon.png");
+    display: inline-block;
+    width: 17px;
+    padding-left: 12px;
+}
+
+a.header_btn_style {
+    color: var(--btn-primary-color);
+    text-decoration: none;
+}
