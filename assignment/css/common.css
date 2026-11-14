@@ -463,7 +463,7 @@ p {
 }
 
 .footer_email {
-    display: inline-block;
+    display: block;
     margin-bottom: 42px;
 }
 
@@ -472,6 +472,9 @@ p {
     color: var(--footer-title-color);
     font-size: var(--footer-title-font-size);
     line-height: var(--footer-title-line-height);
+    display: block;
+    white-space: nowrap;
+    /* Keep phone on 1 line */
 }
 
 .footer .footer_phone:hover,
@@ -489,7 +492,7 @@ p {
 
 /* Large ELEMENTRA */
 
-.footer_wordmark {
+.footer .footer_wordmark {
     font-size: var(--footer-word-font-size);
     font-family: var(--font-heading-family);
     text-align: center;
@@ -534,6 +537,31 @@ p {
     width: 16px;
     height: 16px;
     fill: currentColor;
+}
+
+/* Menu icon */
+
+.menu_button {
+    gap: 5px;
+    /* Space between 3 lines */
+}
+
+.menu_button span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: currentColor;
+    /* Follow button color */
+}
+
+.menu_button span:last-child {
+    width: 18px;
+    /* Shorter bottom line */
+}
+
+.menu_close {
+    font-size: 32px;
+    line-height: 32px;
 }
 
 
@@ -589,6 +617,8 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        /* Stack the 3 lines */
     }
 
 
@@ -605,13 +635,22 @@ p {
         bottom: 0px;
         z-index: 1000;
         overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        transform: translateX(100%);
+        /* Outside the screen */
+        visibility: hidden;
+        transition: transform 0.3s, visibility 0.3s;
     }
 
     /* JS opens the menu */
     .headerside_menu.active {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        transform: translateX(0px);
+        /* Move into the screen */
+        visibility: visible;
     }
 
     .menu_close {

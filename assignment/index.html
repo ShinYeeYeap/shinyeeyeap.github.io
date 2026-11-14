@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
@@ -54,8 +56,59 @@
             </ul>
 
         </nav>
+        <!-- Menu button -->
+        <button class="menu_button" id="menu_button" type="button" aria-label="Open menu" aria-controls="mobile_menu"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
 
     </header>
+    <!-- MOBILE MENU -->
+    <div class="headerside_menu" id="mobile_menu">
+
+        <!-- Close menu -->
+        <button class="menu_close" id="menu_close" type="button" aria-label="Close menu">
+            ×
+        </button>
+
+        <nav>
+
+            <ul class="side_menu">
+
+                <li>
+                    <a href="index.html" class="current">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="tours.html">Tours</a>
+                </li>
+
+                <!-- Pages not included -->
+                <li>
+                    <a href="index.html">Tour Details</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
 
     <main>
 
@@ -552,6 +605,111 @@
     </main>
 
     <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer_top_area">
+
+            <!-- Logo and introduction -->
+            <div class="footer_intro">
+
+                <a href="index.html">
+                    <img class="footer_logo" src="img/logo-light-retina.webp" alt="Elementra Travel">
+                </a>
+
+                <p>
+                    At Elementra, we believe in the power of creativity
+                    and collaboration to drive success. Our dedicated
+                    team is here to help you.
+                </p>
+
+            </div>
+
+            <div class="footer_right_content">
+
+                <!-- OFFICE -->
+                <div class="footer_box footer_office">
+
+                    <h6>Office</h6>
+
+                    <p class="footer_address">
+                        Germany —<br>
+                        785 15h Street, Office<br>
+                        47 Berlin, De 81566
+                    </p>
+
+                    <a class="footer_email" href="mailto:info@email.com">
+                        info@email.com
+                    </a>
+
+                    <a class="footer_phone" href="tel:+18408412569">
+                        +1 840 841 25 69
+                    </a>
+
+                </div>
+
+                <!-- LINKS -->
+                <div class="footer_box footer_pages">
+
+                    <h6>Links</h6>
+
+                    <ul class="footer_links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                        <!-- Page not included -->
+                        <li><a href="index.html">Blog</a></li>
+
+                        <li><a href="contact.html">Contacts</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- FOLLOW US -->
+                <div class="footer_box footer_social">
+
+                    <h6>Follow Us</h6>
+
+                    <ul class="footer_links">
+
+                        <li>
+                            <a href="https://www.facebook.com/ThemeRexStudio">
+                                Facebook
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/ThemerexThemes">
+                                Twitter
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/themerex_net/">
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCnFisBimrK2aIE-hnY70kCA">
+                                Youtube
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Large ELEMENTRA -->
+        <p class="footer_wordmark">Elementra</p>
+
+    </footer>
 
 </body>
 
