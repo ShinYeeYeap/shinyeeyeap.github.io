@@ -210,7 +210,7 @@
     font-size: 13px;
     display: inline-block;
     margin-top: 25px;
-    /* Space between image and link */
+    /* Space between img and link */
     text-transform: uppercase;
     line-height: 15.0514px;
     color: var(--color-off-white);
@@ -229,6 +229,69 @@
 .home_card_white .home_card_link:hover,
 .home_card_white .home_card_link:active {
     color: var(--color-grey);
+}
+
+/* HOME LOCATIONS */
+
+.home_locations {
+    padding: 0px 70px 150px;
+}
+
+.home_locations_title {
+    font-size: 216px;
+    color: #E7E7D9;
+    line-height: 216px;
+    text-align: center;
+    margin-bottom: 150px;
+    letter-spacing: -6.48px;
+}
+
+.home_locations_intro {
+    display: flex;
+    margin-bottom: 52px;
+    gap: 30px;
+}
+
+.home_locations_subtitle {
+    font-family: var(--font-heading-family);
+    font-size: 14px;
+    flex: 1;
+    /* Same width as the description */
+    color: var(--color-dark);
+    text-transform: uppercase;
+    line-height: 14px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.home_locations_description {
+    flex: 1;
+    font-size: 23px;
+    line-height: 27.9979px;
+    font-family: var(--font-heading-family);
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+
+/* Location images */
+
+.home_locations_images {
+    gap: 30px;
+    display: flex;
+}
+
+.home_location_item {
+    flex: 1;
+    /* 4 equal spaces */
+    min-width: 0px;
+}
+
+.home_location_item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Keep the img ratio */
 }
 
 /* TABLET */
@@ -297,6 +360,28 @@
 
     .home_travel_cards {
         margin-top: 40px;
+    }
+
+    /* Home locations */
+
+    .home_locations {
+        padding: 0px 30px 95px;
+    }
+
+    .home_locations_title {
+        font-size: 153.6px;
+        margin-bottom: 95px;
+        letter-spacing: -4px;
+        line-height: 153.6px;
+    }
+
+    .home_locations_intro {
+        margin-bottom: 38px;
+    }
+
+    .home_locations_description {
+        font-size: 20px;
+        line-height: 24.346px;
     }
 }
 
@@ -390,7 +475,7 @@
 
     .home_travel_cards {
         flex-direction: column;
-        /* One card below another */
+        /* 1 card below another */
         gap: 20px;
         margin-top: 30px;
     }
@@ -403,5 +488,48 @@
     .home_travel_card h3 {
         font-size: 18px;
         line-height: 21.9114px;
+    }
+
+    /* Home locations */
+
+    .home_locations {
+        padding: 0px 20px 65px;
+    }
+
+    .home_locations_title {
+        font-size: 54.6px;
+        line-height: 54.6px;
+        margin-bottom: 65px;
+        letter-spacing: -1px;
+    }
+
+    .home_locations_intro {
+        flex-direction: column;
+        /* Small title above description */
+        gap: 10px;
+        margin-bottom: 28px;
+    }
+
+    .home_locations_subtitle {
+        padding-top: 0px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .home_locations_description {
+        font-size: 18px;
+        line-height: 21.9114px;
+    }
+
+    .home_locations_images {
+        flex-wrap: wrap;
+        /* Img can go to the next row */
+        gap: 20px;
+    }
+
+    .home_location_item {
+        width: calc((100% - 20px) / 2);
+        flex: none;
+        /* 2 img per row */
     }
 }
