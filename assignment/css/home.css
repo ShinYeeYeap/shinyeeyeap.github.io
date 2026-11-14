@@ -294,6 +294,53 @@
     /* Keep the img ratio */
 }
 
+/* HOME MEMORIES */
+
+.home_memories {
+    background-image: url("../img/Home Page_Create_Memories.jpg");
+    min-height: 570.234px;
+    padding: 60px;
+    display: flex;
+    align-items: flex-end;
+    /* Content near the bottom */
+    background-size: cover;
+    /* Fill the area, keep img ratio */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home_memories_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.home_memories_title {
+    color: var(--color-off-white);
+    max-width: 585px;
+    font-size: var(--font-size-h1);
+    line-height: var(--font-line-height-h1);
+}
+
+
+/* EXPLORE MORE */
+
+.home_memories_button {
+    color: var(--color-off-white);
+    border: 1px solid var(--color-off-white);
+    background-color: var(--color-transparent);
+}
+
+.home_memories_button:hover,
+.home_memories_button:active,
+.home_memories_button:focus-visible {
+    background-color: var(--color-cream);
+    border-color: var(--color-cream);
+    color: var(--color-dark);
+}
+
 /* TABLET */
 
 @media screen and (max-width: 1279px) {
@@ -382,6 +429,17 @@
     .home_locations_description {
         font-size: 20px;
         line-height: 24.346px;
+    }
+
+    /* Home memories */
+
+    .home_memories {
+        padding: 30px;
+        min-height: 400px;
+    }
+
+    .home_memories_title {
+        max-width: 623px;
     }
 }
 
@@ -531,5 +589,23 @@
         width: calc((100% - 20px) / 2);
         flex: none;
         /* 2 img per row */
+    }
+
+    /* Home memories */
+
+    .home_memories {
+        min-height: 350px;
+        padding: 30px 20px;
+    }
+
+    .home_memories_content {
+        flex-direction: column;
+        /* Title above button */
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .home_memories_title {
+        max-width: 100%;
     }
 }
