@@ -125,6 +125,84 @@
     line-height: 27.9979px;
 }
 
+/* HOME TRAVEL CARDS */
+
+.home_travel {
+    padding: 80px 70px;
+    text-align: center;
+}
+
+.home_travel_subtitle {
+    font-size: 14px;
+    font-family: var(--font-heading-family);
+    color: var(--color-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 14px;
+    margin-bottom: 22px;
+}
+
+.home_travel_title {
+    max-width: 735px;
+    /* Keep the title from getting too wide */
+    margin: 0px auto;
+    /* Centre the title box */
+    font-size: var(--font-size-h1);
+    line-height: var(--font-line-height-h1);
+}
+
+.home_travel_cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.home_travel_card {
+    padding: 40px;
+    flex: 1;
+    /* 3 cards share the row */
+    min-width: 0px;
+}
+
+.home_travel_card h3 {
+    color: inherit;
+    /* Use this card de text color */
+    font-size: 23px;
+    line-height: 27.9979px;
+    margin-bottom: 6px;
+}
+
+.home_travel_card p {
+    font-size: 14px;
+    line-height: 18.2px;
+    margin-bottom: 30px;
+}
+
+.home_travel_card img {
+    width: 100%;
+    display: block;
+    border-radius: 200px 200px 0px 0px;
+    /* Round the 2 top corners */
+}
+
+
+/* Card colors */
+
+.home_card_green {
+    background-color: #677115;
+    color: var(--color-off-white);
+}
+
+.home_card_white {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+}
+
+.home_card_red {
+    background-color: #A8463F;
+    color: var(--color-off-white);
+}
+
 /* TABLET */
 
 @media screen and (max-width: 1279px) {
@@ -168,6 +246,29 @@
     .home_statistics_name {
         font-size: 20px;
         line-height: 24.346px;
+    }
+
+    /* Home travel cards */
+
+    .home_travel {
+        padding: 60px 30px;
+    }
+
+    .home_travel_title {
+        max-width: 575px;
+    }
+
+    .home_travel_card {
+        padding: 30px 25px;
+    }
+
+    .home_travel_card h3 {
+        font-size: 20px;
+        line-height: 24.346px;
+    }
+
+    .home_travel_cards {
+        margin-top: 40px;
     }
 }
 
@@ -244,6 +345,34 @@
     }
 
     .home_statistics_name {
+        font-size: 18px;
+        line-height: 21.9114px;
+    }
+
+    /* Home travel cards */
+
+    .home_travel {
+        padding: 40px 20px;
+    }
+
+    .home_travel_subtitle {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .home_travel_cards {
+        flex-direction: column;
+        /* One card below another */
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .home_travel_card {
+        flex: none;
+        padding: 30px 40px;
+    }
+
+    .home_travel_card h3 {
         font-size: 18px;
         line-height: 21.9114px;
     }
