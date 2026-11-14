@@ -509,6 +509,173 @@
     margin: 0px 4px;
 }
 
+/* HOME EXPLORE BEYOND */
+
+.home_beyond {
+    padding: 70px;
+    background-image: url("https://travel.elementra.themerex.net/wp-content/uploads/2025/02/custom-img-09.jpg");
+    display: flex;
+    justify-content: flex-end;
+    /* White box on the right */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home_beyond_box {
+    background-color: var(--color-white);
+    width: 410px;
+    padding: 55px 40px;
+}
+
+.home_beyond_box h2 {
+    margin-bottom: 25px;
+}
+
+.home_beyond_box p {
+    margin-bottom: 140px;
+    /* Space above the link */
+}
+
+.home_beyond_link {
+    font-family: var(--font-heading-family);
+    font-size: 12px;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    line-height: 12px;
+    display: inline-block;
+}
+
+
+/* HOME REVIEW */
+
+.home_review {
+    background-color: var(--color-white);
+    padding-bottom: 150px;
+}
+
+.home_review_heading {
+    overflow: hidden;
+    /* Keep the large text inside */
+    padding: 15px 0px 150px;
+}
+
+.home_review_heading p {
+    font-size: 140px;
+    font-family: var(--font-heading-family);
+    color: var(--color-dark);
+    white-space: nowrap;
+    /* Keep 1 line */
+    line-height: 112px;
+    text-transform: uppercase;
+    letter-spacing: -4.2px;
+}
+
+.home_review_content {
+    max-width: 780px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+/* Review text */
+
+.home_review_stars {
+    color: #ED8A19;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+.home_review_text {
+    font-family: var(--font-heading-family);
+    font-size: var(--font-size-h4);
+    color: var(--color-dark);
+    text-transform: uppercase;
+    line-height: var(--font-line-height-h4);
+    margin-bottom: 70px;
+}
+
+
+/* Customer */
+
+.home_review_customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.home_review_customer img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Round customer img */
+}
+
+.home_review_info {
+    text-align: left;
+}
+
+.home_review_name {
+    font-size: var(--font-size-h5);
+    font-family: var(--font-heading-family);
+    text-transform: uppercase;
+    color: var(--color-dark);
+    line-height: var(--font-line-height-h5);
+    margin-bottom: 4px;
+}
+
+.home_review_role {
+    font-size: 15px;
+    color: var(--color-grey);
+    line-height: 20px;
+}
+
+
+/* HOME FOLLOW US */
+
+.home_follow {
+    padding: 150px 75px;
+}
+
+.home_follow_title {
+    font-size: 19px;
+    text-align: center;
+    line-height: 21.9982px;
+    margin-bottom: 42px;
+}
+
+.home_follow_title a {
+    font-size: 14px;
+    color: var(--color-dark);
+}
+
+
+/* Follow img */
+
+.home_follow_gallery {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.home_follow_img {
+    width: calc((100% - 150px) / 6);
+    /* 6 img, 5 gaps */
+    min-width: 0px;
+}
+
+.home_follow_img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* Square img 正方形 */
+    object-fit: cover;
+}
+
 /* TABLET */
 
 @media screen and (max-width: 1279px) {
@@ -667,6 +834,63 @@
 
     .home_blog_card_title {
         margin-bottom: 30px;
+    }
+
+    /* Home explore beyond */
+
+    .home_beyond {
+        padding: 30px;
+    }
+
+    .home_beyond_box {
+        width: 326px;
+        padding: 40px;
+    }
+
+    .home_beyond_box h2 {
+        margin-bottom: 20px;
+    }
+
+    .home_beyond_box p {
+        margin-bottom: 80px;
+    }
+
+
+    /* Home review */
+
+    .home_review {
+        padding-bottom: 95px;
+    }
+
+    .home_review_heading {
+        padding-bottom: 95px;
+    }
+
+    .home_review_heading p {
+        font-size: 107px;
+        letter-spacing: -3px;
+        line-height: 85.6px;
+    }
+
+    .home_review_content {
+        max-width: 630px;
+    }
+
+    .home_review_text {
+        margin-bottom: 50px;
+    }
+
+
+    /* Home follow us */
+
+    .home_follow {
+        padding: 95px 30px;
+    }
+
+    .home_follow_title {
+        font-size: 18px;
+        line-height: 20.8404px;
+        margin-bottom: 35px;
     }
 }
 
@@ -899,5 +1123,89 @@
 
     .home_blog_card_title {
         margin-bottom: 25px;
+    }
+
+    /* Home explore beyond */
+
+    .home_beyond {
+        padding: 20px;
+    }
+
+    .home_beyond_box {
+        width: 100%;
+        padding: 35px 30px;
+    }
+
+    .home_beyond_box h2 {
+        margin-bottom: 15px;
+    }
+
+    .home_beyond_box p {
+        margin-bottom: 40px;
+    }
+
+
+    /* Home review */
+
+    .home_review {
+        padding-bottom: 65px;
+    }
+
+    .home_review_heading {
+        padding: 10px 0px 65px;
+    }
+
+    .home_review_heading p {
+        font-size: 70px;
+        line-height: 56px;
+        letter-spacing: -2px;
+    }
+
+    .home_review_content {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .home_review_stars {
+        margin-bottom: 20px;
+    }
+
+    .home_review_text {
+        margin-bottom: 40px;
+    }
+
+    .home_review_customer {
+        gap: 15px;
+    }
+
+    .home_review_customer img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    /* Home follow us */
+
+    .home_follow {
+        padding: 65px 20px;
+    }
+
+    .home_follow_title {
+        font-size: 16px;
+        line-height: 18.5248px;
+        margin-bottom: 30px;
+    }
+
+    .home_follow_title a {
+        font-size: 13px;
+    }
+
+    .home_follow_gallery {
+        gap: 20px;
+    }
+
+    .home_follow_img {
+        width: calc((100% - 20px) / 2);
+        /* 2 img per row */
     }
 }
