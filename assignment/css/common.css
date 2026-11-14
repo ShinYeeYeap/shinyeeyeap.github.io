@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=Tenor+Sans&display=swap');
+
+
+/* RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ROOT VARIABLES */
+
+:root {
+
+    /* COLORS */
+    --color-dark: #140503;
+    --color-grey: #82878E;
+    --color-cream: #FBFCEE;
+    --color-orange: #ED9266;
+    --color-orange-hover: #E68354;
+    --color-brown: #472425;
+    --color-deep-brown: #2A1617;
+    --color-footer-word: #573435;
+    --color-white: #FFFFFF;
+    --color-off-white: #FFFEFE;
+    --color-light-grey: #F6F7F8;
+    --color-transparent: transparent;
+
+
+    /* GLOBAL FONTS */
+    --font-family: "Kumbh Sans", sans-serif;
+    --font-heading-family: "Tenor Sans", sans-serif;
+    /* Global font weights */
+    --font-weight-regular: 400;
+    /* Global font size */
+    --font-size: 16px;
+    --font-line-height: 26px;
+    /* Global font color */
+    --color-text: var(--color-grey);
+    --color-text-headings: var(--color-dark);
+
+
+    /* HEADINGS */
+    /* h1 */
+    --font-size-h1: 57px;
+    --font-line-height-h1: 57px;
+
+    /* h2 */
+    --font-size-h2: 47px;
+    --font-line-height-h2: 49.9986px;
+
+    /* h3 */
+    --font-size-h3: 28px;
+    --font-line-height-h3: 31.9984px;
+
+    /* h4 */
+    --font-size-h4: 23px;
+    --font-line-height-h4: 27.9979px;
+
+    /* h5 */
+    --font-size-h5: 19px;
+    --font-line-height-h5: 21.9982px;
+
+    /* h6 */
+    --font-size-h6: 14px;
+    --font-line-height-h6: 14px;
+
+
+    /* BUTTONS FONTS */
+    --btn-font-size: 13px;
+    --btn-line-height: 19px;
+    --btn-letter-spacing: 1px;
+
+    /* BUTTON SIZE */
+    --btn-padding: 18px 44px;
+    --btn-radius: 30px;
+
+    /* ORANGE BUTTON */
+    --btn-orange-bg: var(--color-orange);
+    --btn-orange-bg-hover: var(--color-orange-hover);
+    --btn-orange-text: var(--color-cream);
+
+
+    /* HEADER FONTS */
+    --header-menu-font-size: 14px;
+    --header-menu-line-height: 21px;
+    --header-menu-letter-spacing: 1px;
+
+    /* HEADER COLORS */
+    --header-menu-color: var(--color-dark);
+    --header-menu-color-hover: var(--color-grey);
+
+    /* HEADER SPACING */
+    --header-padding: 40px 70px;
+
+    /* OPENED MENU */
+    --header-panel-color: var(--color-deep-brown);
+    --header-panel-text: var(--color-off-white);
+    --header-panel-text-hover: var(--color-light-grey);
+    --header-panel-font-size: 23px;
+    --header-panel-line-height: 27.6px;
+
+
+    /* FOOTER COLORS */
+    --footer-bg-color: var(--color-brown);
+    --footer-title-color: var(--color-off-white);
+    --footer-text-color: var(--color-light-grey);
+    --footer-link-color-hover: var(--color-orange);
+
+    /* FOOTER FONTS */
+    --footer-title-font-size: 19px;
+    --footer-title-line-height: 21.9982px;
+
+    /* FOOTER SPACING */
+    --footer-padding: 100px 70px 70px;
+    --footer-top-space: 150px;
+    --footer-list-gap: 19px;
+
+    /* LARGE ELEMENTRA */
+    --footer-word-font-size: 216px;
+    --footer-word-line-height: 216px;
+    --footer-word-letter-spacing: -7px;
+    --footer-word-color: var(--color-footer-word);
+
+
+    /* BACK TO TOP */
+    --top-button-size: 44.7969px;
+    --top-button-position: 24px;
+    --top-button-color: var(--color-off-white);
+    --top-button-bg: var(--color-deep-brown);
+}
+
+
+/* GLOBAL */
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-cream);
+    font-size: var(--font-size);
+    color: var(--color-text);
+    line-height: var(--font-line-height);
+    font-weight: var(--font-weight-regular);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: var(--font-family);
+}
+
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading-family);
+    color: var(--color-text-headings);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    line-height: var(--font-line-height-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--font-line-height-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--font-line-height-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    line-height: var(--font-line-height-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+    line-height: var(--font-line-height-h5);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+    line-height: var(--font-line-height-h6);
+    letter-spacing: 1px;
+}
+
+
+/* BODY TEXT */
+
+p {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-line-height);
+}
+
+
+/* TEXT COLORS */
+
+.font_text_dark {
+    color: var(--color-dark);
+}
+
+.font_text_grey {
+    color: var(--color-grey);
+}
+
+.font_text_white {
+    color: var(--color-white);
+}
+
+.font_text_cream {
+    color: var(--color-cream);
+}
+
+.font_text_orange {
+    color: var(--color-orange);
+}
+
+
+/* TEXT ALIGNMENT */
+
+.text_align_center {
+    text-align: center;
+}
+
+.text_align_left {
+    text-align: left;
+}
+
+
+/* BUTTON */
+
+/* Shared button style */
+.btn {
+    font-size: var(--btn-font-size);
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    display: inline-block;
+    font-family: var(--font-heading-family);
+    line-height: var(--btn-line-height);
+    letter-spacing: var(--btn-letter-spacing);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* About and Tours - GET STARTED NOW */
+.btn_orange {
+    background-color: var(--btn-orange-bg);
+    border: 0px;
+    color: var(--btn-orange-text);
+}
+
+.btn_orange:hover,
+.btn_orange:active,
+.btn_orange:focus-visible {
+    background-color: var(--btn-orange-bg-hover);
+    color: var(--btn-orange-text);
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--header-padding);
+    align-items: center;
+    background-color: var(--color-transparent);
+}
+
+.header_logo img {
+    width: 197px;
+    display: block;
+    height: auto;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu {
+    display: flex;
+    list-style: none;
+    min-height: 40px;
+    align-items: center;
+}
+
+.header_menu a {
+    font-family: var(--font-heading-family);
+    font-size: var(--header-menu-font-size);
+    padding: 0px 15px;
+    display: block;
+    color: var(--header-menu-color);
+    line-height: var(--header-menu-line-height);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--header-menu-letter-spacing);
+}
+
+.header_menu a:hover,
+.header_menu a:active,
+.header_menu a.current {
+    color: var(--header-menu-color-hover);
+}
+
+
+/* Header social icons */
+
+.header_social {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header_social a {
+    color: var(--color-dark);
+    display: flex;
+}
+
+.header_social svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Icon uses the link color */
+.header_social path {
+    fill: currentColor;
+}
+
+
+/* Menu buttons */
+
+.menu_button,
+.menu_close {
+    padding: 0px;
+    border: 0px;
+    display: none;
+    cursor: pointer;
+    background-color: var(--color-transparent);
+}
+
+.menu_button {
+    color: var(--header-menu-color);
+    width: 28px;
+    height: 28px;
+}
+
+.menu_button:hover,
+.menu_button:active {
+    color: var(--header-menu-color-hover);
+}
+
+.menu_button svg,
+.menu_close svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Icon uses the button color */
+.menu_button path,
+.menu_close path {
+    fill: currentColor;
+}
+
+.headerside_menu {
+    display: none;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--footer-bg-color);
+    padding: var(--footer-padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_top_area {
+    display: flex;
+    padding-bottom: var(--footer-top-space);
+    gap: 30px;
+}
+
+.footer_intro {
+    width: 40%;
+}
+
+.footer_logo {
+    width: 197px;
+    margin-bottom: 40px;
+    display: block;
+    height: auto;
+}
+
+.footer_intro p {
+    max-width: 390px;
+}
+
+.footer_right_content {
+    display: flex;
+    width: 60%;
+    padding-top: 3px;
+    gap: 30px;
+}
+
+.footer_box {
+    flex: 1;
+    min-width: 0px;
+}
+
+.footer h6 {
+    font-size: var(--footer-title-font-size);
+    color: var(--footer-title-color);
+    margin-bottom: 25px;
+    line-height: var(--footer-title-line-height);
+    letter-spacing: normal;
+}
+
+.footer p,
+.footer a {
+    color: var(--footer-text-color);
+    font-size: var(--font-size);
+    line-height: var(--font-line-height);
+}
+
+.footer a:hover,
+.footer a:active {
+    color: var(--footer-link-color-hover);
+}
+
+.footer_address {
+    margin-bottom: 35px;
+    max-width: 200px;
+}
+
+.footer_email {
+    display: inline-block;
+    margin-bottom: 42px;
+}
+
+.footer .footer_phone {
+    font-family: var(--font-heading-family);
+    color: var(--footer-title-color);
+    font-size: var(--footer-title-font-size);
+    line-height: var(--footer-title-line-height);
+}
+
+.footer .footer_phone:hover,
+.footer .footer_phone:active {
+    color: var(--footer-link-color-hover);
+}
+
+.footer_links {
+    display: flex;
+    list-style: none;
+    gap: var(--footer-list-gap);
+    flex-direction: column;
+}
+
+
+/* Large ELEMENTRA */
+
+.footer_wordmark {
+    font-size: var(--footer-word-font-size);
+    font-family: var(--font-heading-family);
+    text-align: center;
+    color: var(--footer-word-color);
+    line-height: var(--footer-word-line-height);
+    font-weight: var(--font-weight-regular);
+    text-transform: uppercase;
+    letter-spacing: var(--footer-word-letter-spacing);
+}
+
+
+/* BACK TO TOP */
+
+.back_to_top {
+    position: fixed;
+    right: var(--top-button-position);
+    bottom: var(--top-button-position);
+    width: var(--top-button-size);
+    height: var(--top-button-size);
+    background-color: var(--top-button-bg);
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--top-button-color);
+    z-index: 100;
+    text-decoration: none;
+}
+
+/* JS shows the button */
+.back_to_top.active {
+    display: flex;
+}
+
+.back_to_top:hover,
+.back_to_top:active {
+    background-color: var(--top-button-bg);
+    color: var(--top-button-color);
+}
+
+.back_to_top svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 1279px) {
+
+    :root {
+
+        /* Headings */
+        --font-size-h1: 45px;
+        --font-line-height-h1: 45px;
+
+        --font-size-h2: 36px;
+        --font-line-height-h2: 38.2968px;
+
+        --font-size-h3: 22px;
+        --font-line-height-h3: 25.1416px;
+
+        --font-size-h4: 20px;
+        --font-line-height-h4: 24.346px;
+
+        --font-size-h5: 18px;
+        --font-line-height-h5: 20.8404px;
+
+        /* Button */
+        --btn-padding: 16px 40px;
+
+        /* Header */
+        --header-padding: 30px;
+
+        /* Footer */
+        --footer-padding: 70px 30px 35px;
+        --footer-top-space: 95px;
+        --footer-list-gap: 13px;
+
+        --footer-title-font-size: 18px;
+        --footer-title-line-height: 20.8404px;
+
+        /* Large ELEMENTRA */
+        --footer-word-font-size: 158.72px;
+        --footer-word-line-height: 158.72px;
+    }
+
+
+    /* Header */
+
+    .header_right {
+        display: none;
+    }
+
+    .menu_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Opened menu */
+
+    .headerside_menu {
+        background-color: var(--header-panel-color);
+        width: 390px;
+        max-width: 100%;
+        padding: 50px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    /* JS opens the menu */
+    .headerside_menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu_close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: var(--header-panel-text);
+        display: flex;
+    }
+
+    .menu_close:hover,
+    .menu_close:active {
+        color: var(--header-panel-text-hover);
+    }
+
+    .side_menu {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .side_menu a {
+        font-family: var(--font-heading-family);
+        padding: 7px 0px;
+        font-size: var(--header-panel-font-size);
+        display: block;
+        color: var(--header-panel-text);
+        line-height: var(--header-panel-line-height);
+        text-transform: uppercase;
+        letter-spacing: var(--header-menu-letter-spacing);
+        font-weight: var(--font-weight-regular);
+    }
+
+    .side_menu a:hover,
+    .side_menu a:active,
+    .side_menu a.current {
+        color: var(--header-panel-text-hover);
+    }
+
+    /* Stop page scrolling when menu opens */
+    body.menu_open {
+        overflow: hidden;
+    }
+
+
+    /* Footer */
+
+    .footer_intro {
+        width: 36%;
+    }
+
+    .footer_right_content {
+        width: 64%;
+    }
+
+    .footer_office {
+        flex: 48;
+    }
+
+    .footer_pages,
+    .footer_social {
+        flex: 26;
+    }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+
+    :root {
+
+        /* Body text */
+        --font-size: 15px;
+        --font-line-height: 24.375px;
+
+        /* Headings */
+        --font-size-h1: 30px;
+        --font-line-height-h1: 30px;
+
+        --font-size-h2: 26px;
+        --font-line-height-h2: 27.6588px;
+
+        --font-size-h3: 20px;
+        --font-line-height-h3: 22.856px;
+
+        --font-size-h4: 18px;
+        --font-line-height-h4: 21.9114px;
+
+        --font-size-h5: 16px;
+        --font-line-height-h5: 18.5248px;
+
+        --font-size-h6: 13px;
+        --font-line-height-h6: 13px;
+
+        /* Button */
+        --btn-padding: 14px 36px;
+
+        /* Header */
+        --header-padding: 20px;
+
+        /* Footer */
+        --footer-padding: 50px 20px 25px;
+        --footer-top-space: 65px;
+        --footer-list-gap: 10px;
+
+        --footer-title-font-size: 16px;
+        --footer-title-line-height: 18.5248px;
+
+        /* Large ELEMENTRA */
+        --footer-word-font-size: 57.33px;
+        --footer-word-line-height: 57.33px;
+        --footer-word-letter-spacing: -2px;
+
+        /* Back to top */
+        --top-button-size: 42px;
+        --top-button-position: 11.25px;
+    }
+
+
+    /* Opened menu */
+
+    .headerside_menu {
+        padding: 40px;
+    }
+
+    .menu_close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .side_menu a {
+        padding: 5px 0px;
+    }
+
+
+    /* Footer */
+
+    .footer_top_area {
+        flex-wrap: wrap;
+    }
+
+    .footer_intro,
+    .footer_right_content {
+        width: 100%;
+    }
+
+    .footer_logo {
+        margin-bottom: 20px;
+    }
+
+    .footer_right_content {
+        gap: 0px;
+        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+
+    .footer_box {
+        flex: none;
+    }
+
+    .footer_office {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .footer_pages,
+    .footer_social {
+        width: 50%;
+    }
+
+    .footer_pages {
+        padding-right: 10px;
+    }
+
+    .footer_social {
+        padding-left: 10px;
+    }
+
+    .footer h6 {
+        margin-bottom: 15px;
+    }
+
+    .footer_address {
+        margin-bottom: 10px;
+    }
+
+    .footer_email {
+        margin-bottom: 16px;
+    }
+}
