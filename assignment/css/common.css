@@ -542,26 +542,46 @@ p {
 /* Menu icon */
 
 .menu_button {
-    gap: 5px;
-    /* Space between 3 lines */
+    gap: 5.6px;
 }
 
 .menu_button span {
-    display: block;
     width: 24px;
-    height: 2px;
+    height: 1.4px;
+    display: block;
     background-color: currentColor;
-    /* Follow button color */
+    border-radius: 1px;
 }
 
 .menu_button span:last-child {
-    width: 18px;
+    width: 17.4px;
     /* Shorter bottom line */
 }
 
+
+/* Close icon */
+
 .menu_close {
-    font-size: 32px;
-    line-height: 32px;
+    width: 24px;
+    height: 24px;
+}
+
+.menu_close span {
+    position: absolute;
+    width: 23px;
+    height: 1.3px;
+    background-color: currentColor;
+    top: 11.35px;
+    left: 0.5px;
+    border-radius: 1px;
+}
+
+.menu_close span:first-child {
+    transform: rotate(45deg);
+}
+
+.menu_close span:last-child {
+    transform: rotate(-45deg);
 }
 
 
@@ -616,9 +636,9 @@ p {
     .menu_button {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-        /* Stack the 3 lines */
+        padding-left: 2px;
     }
 
 
@@ -673,15 +693,15 @@ p {
     }
 
     .side_menu a {
-        font-family: var(--font-heading-family);
-        padding: 7px 0px;
-        font-size: var(--header-panel-font-size);
         display: block;
-        color: var(--header-panel-text);
-        line-height: var(--header-panel-line-height);
-        text-transform: uppercase;
-        letter-spacing: var(--header-menu-letter-spacing);
+        padding: 17px 0px;
+        font-family: var(--font-heading-family);
+        font-size: 23px;
         font-weight: var(--font-weight-regular);
+        line-height: 27.6px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--header-panel-text);
     }
 
     .side_menu a:hover,
@@ -778,12 +798,12 @@ p {
     }
 
     .menu_close {
-        top: 20px;
+        top: 22px;
         right: 20px;
     }
 
     .side_menu a {
-        padding: 5px 0px;
+        padding: 15px 0px;
     }
 
 
