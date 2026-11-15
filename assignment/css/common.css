@@ -251,6 +251,23 @@ p {
     text-align: left;
 }
 
+/* Line with 2 dots */
+
+.section_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1px;
+    background-color: var(--color-dark);
+}
+
+.section_line span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-dark);
+    /* Round dots at both ends */
+}
 
 /* BUTTON */
 
@@ -332,6 +349,11 @@ p {
     color: var(--header-menu-color-hover);
 }
 
+.header_line {
+    padding: 0px 75px;
+    /* Line side spacing */
+}
+
 
 /* Header social icons */
 
@@ -339,21 +361,19 @@ p {
     display: flex;
     gap: 25px;
     align-items: center;
+    margin-left: 25px;
+    /* Space after menu */
 }
 
 .header_social a {
-    color: var(--color-dark);
-    display: flex;
+    display: block;
 }
 
-.header_social svg {
-    width: 16px;
-    height: 16px;
-}
-
-/* Icon uses the link color */
-.header_social path {
-    fill: currentColor;
+.header_social img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    /* No extra space below img */
 }
 
 
@@ -639,6 +659,10 @@ p {
         padding-left: 2px;
     }
 
+    .header_line {
+        padding: 0px 30px;
+    }
+
 
     /* Opened menu */
 
@@ -786,6 +810,10 @@ p {
         /* Back to top */
         --top-button-size: 42px;
         --top-button-position: 11.25px;
+    }
+
+    .header_line {
+        padding: 0px 20px;
     }
 
 

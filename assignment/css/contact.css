@@ -177,13 +177,18 @@
 }
 
 .contact_detail a:hover {
-    color: var(--color-orange);
+    color: var(--color-grey);
 }
 
 /* CONTACT MESSAGE */
 
 .contact_message {
     padding: 0px 70px 150px;
+}
+
+.contact_message .section_line {
+    margin-bottom: 150px;
+    /* Space between line and text */
 }
 
 .contact_message h2 {
@@ -193,7 +198,6 @@
 
 .contact_message a {
     color: var(--color-light-grey-text);
-    /* Light grey email */
     text-decoration: none;
 }
 
@@ -201,7 +205,6 @@
     color: var(--color-grey);
     /* Darker grey on hover */
 }
-
 
 /* TABLET */
 
@@ -252,6 +255,10 @@
 
     .contact_message {
         padding: 0px 30px 95px;
+    }
+
+    .contact_message .section_line {
+        margin-bottom: 95px;
     }
 
 
@@ -326,7 +333,7 @@
         padding: 0px 20px 65px;
     }
 
-    .contact_message a {
-        text-underline-offset: 3px;
+    .contact_message .section_line {
+        margin-bottom: 65px;
     }
 }
