@@ -1,0 +1,267 @@
+/* CONTACT FORM */
+
+.contact_form_section {
+    padding: 100px 70px 150px;
+}
+
+.contact_form_heading {
+    margin-bottom: 50px;
+}
+
+.contact_form_heading h1 {
+    font-size: var(--font-size-h2);
+    /* Use h2 size for this title */
+    margin-bottom: 20px;
+    line-height: var(--font-line-height-h2);
+}
+
+.contact_form_heading p {
+    color: var(--color-grey);
+}
+
+
+/* Name and email */
+
+.contact_form_row {
+    display: flex;
+    /* Name and email in 1 row */
+    gap: 30px;
+}
+
+.contact_form_row .contact_field {
+    flex: 1;
+    /* Same width for both fields */
+    min-width: 0px;
+    /* Allow fields to shrink */
+}
+
+.contact_field {
+    margin-bottom: 30px;
+    /* Space before next field */
+}
+
+
+/* Field names */
+
+.contact_field label {
+    display: block;
+    /* Label above input */
+    font-family: var(--font-heading-family);
+    color: var(--color-grey);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: var(--font-size-h5);
+    line-height: var(--font-line-height-h5);
+}
+
+
+/* Input lines */
+
+.contact_field input,
+.contact_field textarea {
+    width: 100%;
+    background-color: transparent;
+    /* Show the section background */
+    font-size: var(--font-size);
+    color: var(--color-dark);
+    padding: 12px 0px;
+    line-height: var(--font-line-height);
+    border: 0px;
+    border-bottom: 1px solid var(--color-grey);
+    /* Bottom line only */
+    border-radius: 0px;
+}
+
+.contact_field textarea {
+    display: block;
+    height: 180px;
+    resize: vertical;
+    /* Change height only */
+}
+
+
+/* Placeholder text */
+
+.contact_field input::placeholder,
+.contact_field textarea::placeholder {
+    color: var(--color-grey);
+    opacity: 1;
+    /* Keep placeholder color solid */
+}
+
+
+/* Selected field */
+
+.contact_field input:focus,
+.contact_field textarea:focus {
+    outline: none;
+    /* Use the bottom line for focus */
+    border-bottom: 2px solid var(--color-dark);
+    padding-bottom: 11px;
+    /* Keep field height the same */
+}
+
+
+/* Selected label */
+
+.contact_field:focus-within label {
+    color: var(--color-dark);
+    /* Dark label when typing in this field */
+}
+
+
+/* GENERAL INQUIRIES */
+
+.contact_inquiries {
+    padding: 0px 70px 150px;
+}
+
+.contact_inquiries h2 {
+    margin-bottom: 50px;
+}
+
+.contact_details {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Allow another row */
+}
+
+.contact_detail {
+    width: calc((100% - 90px) / 4);
+    /* 4 columns, 3 gaps */
+    min-width: 0px;
+}
+
+.contact_detail h3 {
+    color: var(--color-grey);
+    font-size: var(--font-size-h5);
+    margin-bottom: 15px;
+    line-height: var(--font-line-height-h5);
+}
+
+.contact_detail p,
+.contact_social a {
+    font-family: var(--font-heading-family);
+    color: var(--color-dark);
+    font-size: var(--font-size-h5);
+    text-transform: uppercase;
+    line-height: var(--font-line-height-h5);
+}
+
+.contact_address {
+    max-width: 210px;
+    /* Keep address lines short */
+}
+
+.contact_social {
+    list-style: none;
+    /* No list dots */
+    display: flex;
+    flex-direction: column;
+    /* Links below each other */
+    gap: 13px;
+}
+
+.contact_detail a:hover {
+    color: var(--color-orange);
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 1279px) {
+
+    .contact_form_section {
+        padding: 70px 30px 95px;
+    }
+
+    .contact_form_heading {
+        margin-bottom: 40px;
+    }
+
+    .contact_form_heading h1 {
+        margin-bottom: 15px;
+    }
+
+    .contact_form_row {
+        gap: 25px;
+    }
+
+    .contact_field textarea {
+        height: 170px;
+    }
+
+    /* General inquiries */
+
+    .contact_inquiries {
+        padding: 0px 30px 95px;
+    }
+
+    .contact_inquiries h2 {
+        margin-bottom: 40px;
+    }
+
+    .contact_detail {
+        width: calc((100% - 30px) / 2);
+        /* 2 columns */
+    }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+
+    .contact_form_section {
+        padding: 50px 20px 65px;
+    }
+
+    .contact_form_heading {
+        margin-bottom: 35px;
+    }
+
+    .contact_form_heading h1 {
+        margin-bottom: 15px;
+    }
+
+    .contact_form_row {
+        display: block;
+        /* Name above email */
+    }
+
+    .contact_field {
+        margin-bottom: 25px;
+    }
+
+    .contact_field textarea {
+        height: 150px;
+    }
+
+    /* General inquiries */
+
+    .contact_inquiries {
+        padding: 0px 20px 65px;
+    }
+
+    .contact_inquiries h2 {
+        margin-bottom: 30px;
+    }
+
+    .contact_details {
+        gap: 30px;
+    }
+
+    .contact_detail {
+        width: 100%;
+        /* 1 column */
+    }
+
+    .contact_detail h3 {
+        margin-bottom: 12px;
+    }
+
+    .contact_social {
+        gap: 10px;
+    }
+}

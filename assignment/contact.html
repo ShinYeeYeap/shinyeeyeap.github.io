@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elementra Travel | Contact</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="js/menu.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="header_logo">
+            <a href="index.html">
+                <img src="img/logo-retina.webp" alt="Elementra Travel Logo">
+            </a>
+        </div>
+
+        <nav class="header_right">
+
+            <ul class="header_menu">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="tours.html">Tours</a>
+                </li>
+
+                <!-- Back to home page_ this 2 pages not included -->
+                <li>
+                    <a href="index.html">Tour Details</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="current">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- Menu button -->
+        <button class="menu_button" id="menu_button" type="button" aria-label="Open menu" aria-controls="mobile_menu"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+    <!-- MOBILE MENU -->
+    <div class="headerside_menu" id="mobile_menu">
+
+        <!-- Close menu -->
+        <!-- Close menu -->
+        <button class="menu_close" id="menu_close" type="button" aria-label="Close menu">
+
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav>
+
+            <ul class="side_menu">
+
+                <li>
+                    <a href="index.html" class="current">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="tours.html">Tours</a>
+                </li>
+
+                <!-- Pages not included -->
+                <li>
+                    <a href="index.html">Tour Details</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Blog</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <main>
+
+        <!-- CONTACT FORM -->
+        <section class="contact_form_section">
+
+            <!-- Form heading -->
+            <div class="contact_form_heading">
+                <h1>Contact Us</h1>
+                <p>Tell us about your next journey.</p>
+            </div>
+
+
+            <form class="contact_form" id="contact_form">
+
+                <!-- Name and email -->
+                <div class="contact_form_row">
+
+                    <div class="contact_field">
+                        <label for="contact_name">Name</label>
+
+                        <input type="text" id="contact_name" name="name" autocomplete="name" placeholder="Your name"
+                            required>
+                    </div>
+
+                    <div class="contact_field">
+                        <label for="contact_email">Email</label>
+
+                        <input type="email" id="contact_email" name="email" autocomplete="email"
+                            placeholder="Your email" required>
+                    </div>
+
+                </div>
+
+
+                <!-- Subject -->
+                <div class="contact_field">
+                    <label for="contact_subject">Subject</label>
+
+                    <input type="text" id="contact_subject" name="subject" placeholder="Your subject" required>
+                </div>
+
+
+                <!-- Message -->
+                <div class="contact_field">
+                    <label for="contact_message">Message</label>
+
+                    <textarea id="contact_message" name="message" rows="5" placeholder="Tell us about your travel plans"
+                        required></textarea>
+                </div>
+
+
+                <!-- Send button -->
+                <button type="submit" class="btn btn_orange">
+                    Send Message
+                </button>
+
+
+            </form>
+
+        </section>
+
+        <!-- GENERAL INQUIRIES -->
+        <section class="contact_inquiries">
+
+            <h2>General Inquiries</h2>
+
+            <div class="contact_details">
+
+                <!-- Email -->
+                <div class="contact_detail">
+                    <h3>General Inquiries</h3>
+
+                    <p>
+                        <a href="mailto:hi@elementra.com">
+                            hi@elementra.com
+                        </a>
+                    </p>
+                </div>
+
+
+                <!-- Address -->
+                <div class="contact_detail">
+                    <h3>Address</h3>
+
+                    <p class="contact_address">
+                        Germany —<br>
+                        785 15h Street, Office 47 Berlin, De 81566
+                    </p>
+                </div>
+
+
+                <!-- Opening hours -->
+                <div class="contact_detail">
+                    <h3>Hours</h3>
+                    <p>Mon-Fri 9:00AM — 4:00PM</p>
+                </div>
+
+
+                <!-- Social links -->
+                <div class="contact_detail">
+                    <h3>Socials</h3>
+
+                    <ul class="contact_social">
+                        <li>
+                            <a href="https://www.facebook.com/">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">X (Twitter)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer_top_area">
+
+            <!-- Logo and introduction -->
+            <div class="footer_intro">
+
+                <a href="index.html">
+                    <img class="footer_logo" src="img/logo-light-retina.webp" alt="Elementra Travel">
+                </a>
+
+                <p>
+                    At Elementra, we believe in the power of creativity
+                    and collaboration to drive success. Our dedicated
+                    team is here to help you.
+                </p>
+
+            </div>
+
+            <div class="footer_right_content">
+
+                <!-- OFFICE -->
+                <div class="footer_box footer_office">
+
+                    <h6>Office</h6>
+
+                    <p class="footer_address">
+                        Germany —<br>
+                        785 15h Street, Office 47 Berlin, De 81566
+                    </p>
+
+                    <a class="footer_email" href="mailto:info@email.com">
+                        info@email.com
+                    </a>
+
+                    <a class="footer_phone" href="tel:+18408412569">
+                        +1 840 841 25 69
+                    </a>
+
+                </div>
+
+                <!-- LINKS -->
+                <div class="footer_box footer_pages">
+
+                    <h6>Links</h6>
+
+                    <ul class="footer_links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                        <!-- Page not included -->
+                        <li><a href="index.html">Blog</a></li>
+
+                        <li><a href="contact.html">Contacts</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- FOLLOW US -->
+                <div class="footer_box footer_social">
+
+                    <h6>Follow Us</h6>
+
+                    <ul class="footer_links">
+
+                        <li>
+                            <a href="https://www.facebook.com/ThemeRexStudio">
+                                Facebook
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/ThemerexThemes">
+                                Twitter
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/themerex_net/">
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCnFisBimrK2aIE-hnY70kCA">
+                                Youtube
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Large ELEMENTRA -->
+        <p class="footer_wordmark">Elementra</p>
+
+    </footer>
+
+</body>
+
+</html>
