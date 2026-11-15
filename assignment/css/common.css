@@ -119,8 +119,8 @@
     --footer-list-gap: 19px;
 
     /* LARGE ELEMENTRA */
-    --footer-word-font-size: 216px;
-    --footer-word-line-height: 216px;
+    --footer-word-font-size: 186px;
+    --footer-word-line-height: 186px;
     --footer-word-letter-spacing: -7px;
     --footer-word-color: var(--color-footer-word);
 
@@ -371,6 +371,7 @@ p {
     color: var(--header-menu-color);
     width: 28px;
     height: 28px;
+    gap: 5.6px;
 }
 
 .menu_button:hover,
@@ -411,7 +412,7 @@ p {
 }
 
 .footer_intro {
-    width: 40%;
+    width: calc((100% - 30px) * 0.4);
 }
 
 .footer_logo {
@@ -427,7 +428,7 @@ p {
 
 .footer_right_content {
     display: flex;
-    width: 60%;
+    width: calc((100% - 30px) * 0.6);
     padding-top: 3px;
     gap: 30px;
 }
@@ -541,10 +542,6 @@ p {
 
 /* Menu icon */
 
-.menu_button {
-    gap: 5.6px;
-}
-
 .menu_button span {
     width: 24px;
     height: 1.4px;
@@ -622,8 +619,8 @@ p {
         --footer-title-line-height: 20.8404px;
 
         /* Large ELEMENTRA */
-        --footer-word-font-size: 158.72px;
-        --footer-word-line-height: 158.72px;
+        --footer-word-font-size: 119.04px;
+        --footer-word-line-height: 119.04px;
     }
 
 
@@ -696,9 +693,9 @@ p {
         display: block;
         padding: 17px 0px;
         font-family: var(--font-heading-family);
-        font-size: 23px;
+        font-size: var(--header-panel-font-size);
         font-weight: var(--font-weight-regular);
-        line-height: 27.6px;
+        line-height: var(--header-panel-line-height);
         letter-spacing: 1px;
         text-transform: uppercase;
         color: var(--header-panel-text);
@@ -719,11 +716,11 @@ p {
     /* Footer */
 
     .footer_intro {
-        width: 36%;
+        width: calc((100% - 30px) * 0.36);
     }
 
     .footer_right_content {
-        width: 64%;
+        width: calc((100% - 30px) * 0.64);
     }
 
     .footer_office {
@@ -781,8 +778,8 @@ p {
         --footer-title-line-height: 18.5248px;
 
         /* Large ELEMENTRA */
-        --footer-word-font-size: 57.33px;
-        --footer-word-line-height: 57.33px;
+        --footer-word-font-size: 46px;
+        --footer-word-line-height: 46px;
         --footer-word-letter-spacing: -2px;
 
         /* Back to top */
@@ -860,5 +857,11 @@ p {
 
     .footer_email {
         margin-bottom: 16px;
+    }
+
+    /* Footer introduction */
+    .footer_intro p {
+        max-width: none;
+        /* Use the available width */
     }
 }

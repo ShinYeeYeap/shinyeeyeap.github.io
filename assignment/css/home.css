@@ -513,7 +513,7 @@
 
 .home_beyond {
     padding: 70px;
-    background-image: url("https://travel.elementra.themerex.net/wp-content/uploads/2025/02/custom-img-09.jpg");
+    background-image: url("../img/Home\ Page_Explore\ Beyond.jpg");
     display: flex;
     justify-content: flex-end;
     /* White box on the right */
@@ -582,10 +582,10 @@
 
 .home_review_stars {
     color: #ED8A19;
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: 16px;
+    letter-spacing: 0px;
     margin-bottom: 30px;
-    line-height: 24px;
+    line-height: 20px;
 }
 
 .home_review_text {
@@ -603,20 +603,20 @@
 .home_review_customer {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 12px;
     align-items: center;
-    gap: 20px;
 }
 
 .home_review_customer img {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
+    width: 65px;
     border-radius: 50%;
-    /* Round customer img */
+    height: 65px;
+    object-fit: cover;
 }
 
 .home_review_info {
-    text-align: left;
+    text-align: center;
 }
 
 .home_review_name {
@@ -630,7 +630,7 @@
 
 .home_review_role {
     font-size: 15px;
-    color: var(--color-grey);
+    color: #A7ACB2;
     line-height: 20px;
 }
 
@@ -646,11 +646,15 @@
     text-align: center;
     line-height: 21.9982px;
     margin-bottom: 42px;
+    letter-spacing: normal;
 }
 
 .home_follow_title a {
     font-size: 14px;
     color: var(--color-dark);
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--color-orange);
+    padding-bottom: 3px;
 }
 
 
@@ -798,10 +802,6 @@
 
     .home_adventure_text p {
         margin-bottom: 16px;
-    }
-
-    .home_adventure_text p:last-child {
-        margin-bottom: 0px;
     }
 
     .home_adventure_left_img {
@@ -1087,10 +1087,6 @@
         margin-bottom: 15px;
     }
 
-    .home_adventure_text p:last-child {
-        margin-bottom: 0px;
-    }
-
     .home_adventure_left_img {
         margin-top: 30px;
     }
@@ -1172,15 +1168,6 @@
 
     .home_review_text {
         margin-bottom: 40px;
-    }
-
-    .home_review_customer {
-        gap: 15px;
-    }
-
-    .home_review_customer img {
-        width: 60px;
-        height: 60px;
     }
 
 
