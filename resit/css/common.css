@@ -29,9 +29,6 @@
     --color-light-grey-text: #A7ACB2;
     --color-transparent: transparent;
     --color-location-word: #E7E7D9;
-    --color-card-green: #677115;
-    --color-card-red: #A8463F;
-    --color-review-star: #ED8A19;
 
 
     /* GLOBAL FONTS */
@@ -82,29 +79,6 @@
     --font-size-extra-small: 13px;
     --font-size-muted: 15px;
     --font-size-dot: 10px;
-
-
-    /* Home hero */
-    --home-explore-font-size: 100.8px;
-    --home-explore-line-height: 90.72px;
-    --home-title-font-size: 136px;
-    --home-title-line-height: 122.4px;
-
-    /* Home numbers */
-    --home-number-font-size: 120px;
-    --home-number-line-height: 108px;
-
-    /* Large LOCATIONS */
-    --location-word-font-size: 216px;
-    --location-word-line-height: 216px;
-
-    /* Home review */
-    --home-review-font-size: 140px;
-    --home-review-line-height: 112px;
-    --home-star-font-size: 17px;
-
-    /* Ready to get started */
-    --home-ready-font-size: 12px;
 
 
     /* BUTTONS FONTS */
@@ -656,24 +630,6 @@ p {
 
     :root {
 
-        /* Home hero */
-        --home-explore-font-size: 54px;
-        --home-explore-line-height: 49px;
-        --home-title-font-size: 84px;
-        --home-title-line-height: 76px;
-
-        /* Home numbers */
-        --home-number-font-size: 65px;
-        --home-number-line-height: 58.5px;
-
-        /* Large LOCATIONS */
-        --location-word-font-size: 158.72px;
-        --location-word-line-height: 158.72px;
-
-        /* Home review */
-        --home-review-font-size: 107px;
-        --home-review-line-height: 85.6px;
-
         /* Headings */
         --font-size-h1: 45px;
         --font-line-height-h1: 45px;
@@ -841,24 +797,6 @@ p {
         --font-size: 15px;
         --font-line-height: 24.375px;
 
-        /* Home hero */
-        --home-explore-font-size: 27.3px;
-        --home-explore-line-height: 24.57px;
-        --home-title-font-size: 34px;
-        --home-title-line-height: 34px;
-
-        /* Home numbers */
-        --home-number-font-size: 48px;
-        --home-number-line-height: 43.2px;
-
-        /* Large LOCATIONS */
-        --location-word-font-size: 57.33px;
-        --location-word-line-height: 57.33px;
-
-        /* Home review */
-        --home-review-font-size: 70px;
-        --home-review-line-height: 56px;
-
         /* Headings */
         --font-size-h1: 30px;
         --font-line-height-h1: 30px;
@@ -984,55 +922,53 @@ p {
         max-width: none;
         /* Use the available width */
     }
+
+    /* Plain lines on mobile */
+
+    .section_line span {
+        display: none;
+    }
 }
 
 
-/* Small desktop - large words */
+/* Small desktop - footer word */
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
 
     :root {
-        --location-word-font-size: 192px;
-        --location-word-line-height: 192px;
         --footer-word-font-size: 192px;
         --footer-word-line-height: 192px;
     }
 }
 
 
-/* Small tablet - large words */
+/* Small tablet - footer word */
 
 @media screen and (min-width: 920px) and (max-width: 1023px) {
 
     :root {
-        --location-word-font-size: 142.6px;
-        --location-word-line-height: 142.6px;
         --footer-word-font-size: 142.6px;
         --footer-word-line-height: 142.6px;
     }
 }
 
 
-/* Narrow tablet - large words */
+/* Narrow tablet - footer word */
 
 @media screen and (min-width: 768px) and (max-width: 919px) {
 
     :root {
-        --location-word-font-size: 119.04px;
-        --location-word-line-height: 119.04px;
         --footer-word-font-size: 119.04px;
         --footer-word-line-height: 119.04px;
     }
 }
 
 
-/* Small mobile - large words */
+/* Small mobile - footer word */
 
 @media screen and (max-width: 389px) {
 
     :root {
-        --location-word-font-size: 46px;
-        --location-word-line-height: 46px;
         --footer-word-font-size: 46px;
         --footer-word-line-height: 46px;
     }

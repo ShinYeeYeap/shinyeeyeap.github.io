@@ -1,3 +1,37 @@
+/* HOME VARIABLES */
+
+:root {
+
+    /* Card colors */
+    --color-card-green: #677115;
+    --color-card-red: #A8463F;
+    --color-review-star: #ED8A19;
+
+    /* Hero */
+    --home-explore-font-size: 100.8px;
+    --home-explore-line-height: 90.72px;
+    /* Main title size */
+    --home-title-font-size: 156.96px;
+    --home-title-line-height: 141.264px;
+
+    /* Numbers */
+    --home-number-font-size: 120px;
+    --home-number-line-height: 108px;
+
+    /* Large LOCATIONS */
+    --location-word-font-size: 216px;
+    --location-word-line-height: 216px;
+
+    /* Review */
+    --home-review-font-size: 140px;
+    --home-review-line-height: 112px;
+    --home-star-font-size: 17px;
+
+    /* Ready link */
+    --home-ready-font-size: 12px;
+}
+
+
 /* HOME HERO */
 
 .home_hero {
@@ -8,6 +42,7 @@
     background-size: 522px auto;
     /* Mountain drawing on the right */
 }
+
 
 /* EXPLORE */
 
@@ -20,11 +55,11 @@
     letter-spacing: -3.024px;
 }
 
-/* NEW HORIZONS */
 
+/* NEW HORIZONS */
 .home_hero_title {
     font-size: var(--home-title-font-size);
-    letter-spacing: -6.8px;
+    letter-spacing: -7.848px;
     line-height: var(--home-title-line-height);
 }
 
@@ -768,6 +803,24 @@
 
 @media screen and (max-width: 1279px) {
 
+    /* Text sizes */
+
+    :root {
+        --home-explore-font-size: 54px;
+        --home-explore-line-height: 49px;
+        --home-title-font-size: 84px;
+        --home-title-line-height: 76px;
+
+        --home-number-font-size: 65px;
+        --home-number-line-height: 58.5px;
+
+        --location-word-font-size: 158.72px;
+        --location-word-line-height: 158.72px;
+
+        --home-review-font-size: 107px;
+        --home-review-line-height: 85.6px;
+    }
+
     .home_hero {
         padding: 30px 30px 50px;
         background-size: 512px auto;
@@ -1015,10 +1068,46 @@
     }
 }
 
+/* Large tablet title */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --home-explore-font-size: 71.68px;
+        --home-explore-line-height: 64.512px;
+
+        --home-title-font-size: 111.616px;
+        --home-title-line-height: 100.454px;
+    }
+
+    .home_hero_small {
+        letter-spacing: -2.1504px;
+    }
+
+    .home_hero_title {
+        letter-spacing: -5.5808px;
+    }
+}
 
 /* MOBILE */
 
 @media screen and (max-width: 767px) {
+
+    /* Text sizes */
+
+    :root {
+        --home-explore-font-size: 27.3px;
+        --home-explore-line-height: 24.57px;
+        --home-title-font-size: 34px;
+        --home-title-line-height: 34px;
+
+        --home-number-font-size: 48px;
+        --home-number-line-height: 43.2px;
+
+        --location-word-font-size: 57.33px;
+        --location-word-line-height: 57.33px;
+
+        --home-review-font-size: 70px;
+        --home-review-line-height: 56px;
+    }
 
     .home_hero {
         padding: 20px 20px 30px;
@@ -1326,5 +1415,69 @@
     .home_follow_img {
         width: calc((100% - 20px) / 2);
         /* 2 img per row */
+    }
+}
+
+/* Mobile title from 390px */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    :root {
+        --home-title-font-size: 41.34px;
+        --home-title-line-height: 41.34px;
+    }
+
+    .home_hero_title {
+        letter-spacing: -2.067px;
+    }
+}
+
+
+/* Small desktop - title and LOCATIONS */
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+
+    :root {
+        /* Keep NEW HORIZONS on one line */
+        --home-title-font-size: 136px;
+        --home-title-line-height: 122.4px;
+
+        /* LOCATIONS size */
+        --location-word-font-size: 192px;
+        --location-word-line-height: 192px;
+    }
+
+    .home_hero_title {
+        letter-spacing: -6.8px;
+    }
+}
+
+
+/* Small tablet - LOCATIONS */
+
+@media screen and (min-width: 920px) and (max-width: 1023px) {
+
+    :root {
+        --location-word-font-size: 142.6px;
+        --location-word-line-height: 142.6px;
+    }
+}
+
+
+/* Narrow tablet - LOCATIONS */
+
+@media screen and (min-width: 768px) and (max-width: 919px) {
+
+    :root {
+        --location-word-font-size: 119.04px;
+        --location-word-line-height: 119.04px;
+    }
+}
+
+
+/* Small mobile - LOCATIONS */
+
+@media screen and (max-width: 389px) {
+
+    :root {
+        --location-word-font-size: 46px;
+        --location-word-line-height: 46px;
     }
 }

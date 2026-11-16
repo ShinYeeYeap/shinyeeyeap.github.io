@@ -7,7 +7,7 @@
 
 .tours_subtitle {
     font-family: var(--font-heading-family);
-    font-size: 14px;
+    font-size: var(--font-size-small);
     color: var(--color-dark);
     margin-bottom: 25px;
     line-height: 14px;
@@ -90,13 +90,13 @@
 }
 
 .tour_days {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     line-height: 19.6px;
     margin-bottom: 27px;
 }
 
 .tour_description {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     line-height: var(--font-line-height);
 }
 
@@ -105,21 +105,37 @@
 
 .tour_link {
     font-family: var(--font-heading-family);
-    font-size: 13px;
+    font-size: var(--font-size-extra-small);
     color: var(--color-dark);
     text-transform: uppercase;
     line-height: 13px;
     display: flex;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     align-self: flex-start;
     /* Link stays on the left */
     margin-top: 30px;
 }
 
+
+/* Thin arrow */
+
 .tour_arrow {
-    font-size: 26px;
-    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 26px;
+    height: 1.5px;
+    background-color: currentColor;
+}
+
+.tour_arrow span {
+    width: 8px;
+    height: 8px;
+    border-top: 1.5px solid currentColor;
+    border-right: 1.5px solid currentColor;
+    transform: rotate(45deg);
+    /* 2 lines form the arrow tip */
 }
 
 .tour_link:hover,
@@ -136,7 +152,7 @@
 }
 
 .tours_faq_subtitle {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     font-family: var(--font-heading-family);
     text-transform: uppercase;
     color: var(--color-dark);
@@ -175,7 +191,7 @@
 
 .tours_faq_item {
     padding: 30px 0px;
-    border-bottom: 1px solid #E7E7D9;
+    border-bottom: 1px solid var(--color-location-word);
 }
 
 .tours_faq_item:first-child {
@@ -183,12 +199,45 @@
 }
 
 .tours_faq_item h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    /* Question on left, sign on right */
     font-size: var(--font-size-h5);
     line-height: var(--font-line-height-h5);
 }
 
+
+/* Static FAQ signs */
+
+.tours_faq_sign {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    color: var(--color-dark);
+}
+
+/* Horizontal line */
+
+.tours_faq_sign span {
+    position: absolute;
+    top: 5.25px;
+    left: 0px;
+    width: 12px;
+    height: 1.5px;
+    background-color: currentColor;
+}
+
+/* Vertical line for plus */
+
+.tours_faq_sign .tours_faq_vertical {
+    transform: rotate(90deg);
+}
+
 .tours_faq_item p {
-    font-size: 15px;
+    font-size: var(--font-size-muted);
     line-height: var(--font-line-height);
     margin-top: 15px;
     padding-right: 90px;
@@ -289,6 +338,17 @@
         max-width: 500px;
         margin-bottom: 20px;
     }
+
+    /* Smaller arrow */
+
+    .tour_arrow {
+        width: 24px;
+    }
+
+    .tour_arrow span {
+        width: 7.4px;
+        height: 7.4px;
+    }
 }
 
 
@@ -303,7 +363,7 @@
     }
 
     .tours_subtitle {
-        font-size: 13px;
+        font-size: var(--font-size-extra-small);
         line-height: 13px;
         margin-bottom: 10px;
     }
@@ -359,7 +419,7 @@
     }
 
     .tours_faq_subtitle {
-        font-size: 13px;
+        font-size: var(--font-size-extra-small);
         line-height: 15.0514px;
     }
 

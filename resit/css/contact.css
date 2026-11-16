@@ -196,9 +196,13 @@
     /* Keep text from going too wide */
 }
 
+/* Message email */
+
 .contact_message a {
     color: var(--color-light-grey-text);
     text-decoration: none;
+    word-wrap: break-word;
+    /* Break long email on narrow screens */
 }
 
 .contact_message a:hover {
